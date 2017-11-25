@@ -1,0 +1,9 @@
+<<set $beginpassage to $beginpassages.pluck()>> \
+<<if ndef $beginpassage>> \
+	<<set $beginpassage to "Einde">> \
+<</if>> \
+Je komt een bar binnen gelopen. Aan een tafel zitten twee ongure mannen die naar je lopen te fluiten. Natuurlijk wil je het hen betaald zetten, maar hoe doe je dat precies?
+
+*[[Ik toon mijn superieure intellect natuurlijk! Ik beledig hem dusdanig dat hij dat niet eens in de gaten heeft en vertwijfeld achter blijft|$beginpassage][$mental += 1]]
+*[[Ik verleid hem tot het drinken van zoveel Grog dat hij en zijn "vriendjes" de kroeg al snel verlaten zijn|$beginpassage][$social += 1]]
+*[[Ik pak hem vast bij zijn lurven en sleep hem over de tafel heen. "Dacht je nu echt dat ik dit pikte?" Hij is snel uit het zicht.|$beginpassage][$physical +=1]]
