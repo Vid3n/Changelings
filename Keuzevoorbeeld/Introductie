@@ -1,7 +1,9 @@
+/* Dit is de reeks (array) waarin alle passages zich bevinden waar de gebruiker at random doorheen moet lopen */  
   <<set $beginpassages = [ "In een café", "Tovenaarstoren", "Donker bos" ]>> \
 <<set $social to 0>> \
 <<set $mental to 0>> \
 <<set $physical to 0>> \
+/* kies een  random element uit de reeks, verwijder hem uit de reeks en wijs hem toe aan de variabele beginpassage 
 <<set $beginpassage to $beginpassages.pluck()>> \
 \
 Dit is een testje met Sugarcube. Het idee is dat er elke keer een random passage wordt gekozen uit een vooraf gedefinieerde lijst met passages, waarbij een vraag niet twee keer voor komt. Aan het einde moet dan een soort van keuzebalk getoond worden welk personage het best past.
