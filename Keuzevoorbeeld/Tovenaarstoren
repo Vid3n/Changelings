@@ -1,0 +1,10 @@
+/* Voor uitleg, zie In een café */
+<<set $beginpassage to $beginpassages.pluck()>> \
+<<if ndef $beginpassage>>\ 
+	<<set $beginpassage to "Einde">>\
+<</if>> \
+Een wijs man zou zich bovenin de oude tovenaarstoren verschanst hebben. Je wilt hem mee krijgen om een vervelend klusje op te knappen. Hoe zou je hem denk je het beste kunnen overtuigen?
+
+* [[Natuurlijk weet hij wat voor een gevaarlijke taak er op hem wacht, maar ik kan hem er vast van overtuigen dat ik hem kan beschermen. |$beginpassage][$physical += 1]]
+* [[ Ik benadruk de noodzaak van onze zaak. Zijn invloed is doorslaggevend en hij zal daarna dan ook als een held ontvangen worden! |$beginpassage][$social += 1]]
+* [[ Ik daag hem uit tot een potje schaak. Zonder twijfel win ik van hem en dan moet hij wel meehelpen. |$beginpassage][$mental += 1]]
