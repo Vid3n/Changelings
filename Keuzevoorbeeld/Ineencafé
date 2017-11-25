@@ -1,5 +1,7 @@
+/* Pak een random element uit de array beginpassages */
 <<set $beginpassage to $beginpassages.pluck()>> \
-<<if ndef $beginpassage>> \
+/* Als deze leeg is, verwijs dan naar de passage einde */ \
+<<if ndef $beginpassage>> \ 
 	<<set $beginpassage to "Einde">> \
 <</if>> \
 Je komt een bar binnen gelopen. Aan een tafel zitten twee ongure mannen die naar je lopen te fluiten. Natuurlijk wil je het hen betaald zetten, maar hoe doe je dat precies?
