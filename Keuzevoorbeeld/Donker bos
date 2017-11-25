@@ -1,0 +1,11 @@
+/* voor uitleg, zie In een café */
+<<set $beginpassage to $beginpassages.pluck()>> \
+<<if ndef $beginpassage>> \
+	<<set $beginpassage to "Einde">> \
+<</if>> \
+
+Je loopt rond in een donker, mysterieus bos. Het voelt dampig aan, alsof de zon continu heeft lopen broeien, maar de bladeren geven onvoldoende licht door om goed de dauwdruppels te kunnen waarnemen. Langzaam aan kom je op een splitsing uit. Daar zie je een kobold langs de weg staan. Hij lijkt je nog niet echt in de gaten te hebben en lijkt meer gefascineerd te zijn door het bord wat op de weg staat. Zachtjes prevelt hij woorden in een taal die lang verloren zijn gegaan.
+/* testje met een conditionele link */
+<<if $mental > 0>>* [[Dat wezen bereid een spreuk voor! <i>"Analys Arcanstruktur"</i>: je probeert snel te vatten of het wezen je kwaad wilt doen.|$beginpassage][$mental += 1]]<</if>>
+* [["Hallo, we willen je geen kwaad doen! Kan ik je helpen deze taal te begrijpen?" Het wezen lijkt geen kwaad in de zin te hebben.|$beginpassage][$social +=1]]
+* [[Charge! Dit gruwelijke wezen zal ons beheksen!|$beginpassage][$physical += 1]]
