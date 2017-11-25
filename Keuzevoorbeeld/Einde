@@ -1,0 +1,5 @@
+Hier kan je dan een analyse doen aan de hand van de gegevens
+
+Social: <<print $social>>
+Mental: <<print $mental>>
+Physical: <<print $physical>>
