@@ -1,0 +1,92 @@
+/* Standaardwaarden voor rollenobject tonen */<<set $rollen to {
+entrepreneur : false,
+exerciser : false,
+visitor : false,
+child : false,
+student : false,
+wedded : false,
+viewer : false,
+stranger : false,
+acquaintance : false,
+occupant : false,
+rival : false,
+junior : false,
+consumer : false,
+senior : false,
+teacher : false,
+friend : false,
+boss : false,
+client : false,
+fixer : false,
+owner : false,
+sibling : false,
+lover : false,
+presenter : false,
+coach : false,
+thinker : false,
+parent : false,
+patient : false,
+carer : false,
+familymember : false,
+colleague : false,
+publisher : false,
+creator : false,
+hobby : "",
+occupation : ""
+} >>
+
+Which role would you like to take? Pick three!
+/*html voor tabel */
+<table>
+<tr>
+<td> Entrepreneur<<checkbox "$rollen.entrepreneur" false true >></td>
+<td> Exerciser<<checkbox "$rollen.exerciser" false true >></td>
+<td> Visitor<<checkbox "$rollen.visitor" false true >></td>
+</tr><tr>
+<td> Child<<checkbox "$rollen.child" false true >></td>
+<td> Student<<checkbox "$rollen.student" false true >></td>
+<td> Husband or Wife<<checkbox "$rollen.wedded" false true >></td>
+</tr><tr>
+<td> Viewer<<checkbox "$rollen.viewer" false true >></td>
+<td> Stranger<<checkbox "$rollen.stranger" false true >></td>
+<td> Acquaintance<<checkbox "$rollen.acquaintance" false true >></td>
+</tr><tr>
+<td> Occupant<<checkbox "$rollen.occupant" false true >></td>
+<td> Rival<<checkbox "$rollen.rival" false true >></td>
+<td> Junior<<checkbox "$rollen.junior" false true >></td>
+</tr><tr>
+<td> Consumer<<checkbox "$rollen.consumer" false true >></td>
+<td> Senior<<checkbox "$rollen.senior" false true >></td>
+<td> Teacher<<checkbox "$rollen.teacher" false true >></td>
+</tr><tr>
+<td> Friend<<checkbox "$rollen.friend" false true >></td>
+<td> Boss<<checkbox "$rollen.boss" false true >></td>
+<td> Client<<checkbox "$rollen.client" false true >></td>
+</tr><tr>
+<td> Fixer<<checkbox "$rollen.fixer" false true >></td>
+<td> Owner<<checkbox "$rollen.owner" false true >></td>
+<td> Sibling<<checkbox "$rollen.sibling" false true >></td>
+</tr><tr>
+<td> Lover<<checkbox "$rollen.lover" false true >></td>
+<td> Presenter<<checkbox "$rollen.presenter" false true >></td>
+<td> Coach<<checkbox "$rollen.coach" false true >></td>
+</tr><tr>
+<td> Thinker<<checkbox "$rollen.thinker" false true >></td>
+<td> Parent<<checkbox "$rollen.parent" false true >></td>
+<td> Patient<<checkbox "$rollen.patient" false true >></td>
+</tr><tr>
+<td> Carer<<checkbox "$rollen.carer" false true >></td>
+<td> Family member<<checkbox "$rollen.familymember" false true >></td>
+<td> Colleague<<checkbox "$rollen.colleague" false true >></td>
+</tr><tr>
+<td> Publisher<<checkbox "$rollen.publisher" false true >></td>
+<td> Creator<<checkbox "$rollen.creator" false true >></td>
+</tr>
+</table>
+
+Or, would you rather describe your own:
+Hobby: <<textbox "$rollen.hobby" "">>
+Occupation: <<textbox "$rollen.occupation" "">>
+
+
+[[Go to the next phase|Uitkomst]]
