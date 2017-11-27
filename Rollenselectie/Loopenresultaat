@@ -1,0 +1,16 @@
+/* definieer een variabele waarin de gekozen rollen worden opgenomen. Voor het gemak heb ik een tekstveld genomen en voeg ik simpelweg enters toe, maar dat had ook een array kunnen zijn */
+<<set $gekozenrollen to "">>
+/*loop, gebaseerd op de eigenschappen binnen het object (Object.keys($rollen) geeft al die namen */
+<<for _i to 0, _name to Object.keys($rollen); _i lt _name.length; _i++>>
+/*Als de naam van de eigenschap een van de namen is waar geen true of false in zit, maar wel een andere waarde, moeten we de tekst als waarde hebben. Dit had overigens veel sneller gekund door te evalueren of de waarde een boolean is bedenk ik me nu */
+	<<if (Object.keys($rollen)[_i] == "occupation" || Object.keys($rollen)[_i] == "hobby") && $rollen[_name[_i]] != "">>
+		<<set $gekozenrollen to $gekozenrollen + $rollen[_name[_i]] + "\n" >>
+  /* anders alleen kiezen wanneer de waarde waar is */
+	<<elseif $rollen[_name[_i]] == true>>
+		<<set $gekozenrollen to $gekozenrollen + " " + Object.keys($rollen)[_i] + "\n"  >> /* de \n is een enter */
+	<</if>>
+<</for>>
+
+Je hebt de volgende rollen gekozen:<<print $gekozenrollen>>
+
+
