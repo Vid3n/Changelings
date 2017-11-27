@@ -1,0 +1,5 @@
+Hier kan je dan een analyse doen aan de hand van de gegevens
+
+Social: <<switch $social>><<case 0>>niet erg sociaal<<case 1>>een prater<<case 2>>een redekunstenaar<<default>>een barde<</switch>> 
+Mental: <<switch $mental>><<case 0>>gebruikt weinig hersenkracht<<case 1>>een strateeg<<case 2>>een hoogbegaafd persoon<<case 3>>een magiër<</switch>>
+Physical: <<switch $physical>><<case 0>>zwakkeling<<case 1>>gebruikt geweld wanneer nodig<<case 2>>strongman<<case 3>>barbaar<</switch>>
