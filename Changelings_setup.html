@@ -102,7 +102,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="Changelings" startnode="10" creator="Twine" creator-version="2.1.3" ifid="797FD9CE-AEC9-4627-AA51-FE70A0278E8E" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+	<div id="store-area" hidden><tw-storydata name="Changelings" startnode="1" creator="Twine" creator-version="2.1.3" ifid="797FD9CE-AEC9-4627-AA51-FE70A0278E8E" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 
 body {
 	color: #fff;
@@ -172,7 +172,9 @@ th {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.stow();
+
 
 
 
@@ -230,9 +232,9 @@ I&#x27;m curious, how far have you traveled?
 </tw-passagedata><tw-passagedata pid="6" name="StoryTitle" tags="" position="130,0">Changelings</tw-passagedata><tw-passagedata pid="7" name="Action done" tags="" position="494,749">You have done your first test.
 
 How did this go?
-What will be next?</tw-passagedata><tw-passagedata pid="8" name="New" tags="" position="189.33333333333334,750.6666666666666">The first thing I&#x27;ll guide you with is to find out which roles you fulfill on a daily basis. 
+What will be next?</tw-passagedata><tw-passagedata pid="8" name="New" tags="" position="189,750">The first thing I&#x27;ll guide you with is to find out which roles you fulfill on a daily basis. 
 
-[[Choose a fixed role|Fixed role]]</tw-passagedata><tw-passagedata pid="9" name="Review Character" tags="" position="348.3333333333333,745.6666666666666">There is no record in the Changeling database. 
+[[Choose a fixed role|Fixed role]]</tw-passagedata><tw-passagedata pid="9" name="Review Character" tags="" position="348,745">There is no record in the Changeling database. 
 
 This is your Changeling:
 
@@ -259,7 +261,7 @@ The story of *name*:
 
 
 Rite of passage:
-</tw-passagedata><tw-passagedata pid="10" name="Fixed role" tags="" position="196,899.6666666666666">&lt;&lt;set $rollen to {
+</tw-passagedata><tw-passagedata pid="10" name="Fixed role" tags="" position="196,899">&lt;&lt;set $rollen to {
 entrepreneur : false,
 exerciser : false,
 visitor : false,
@@ -350,12 +352,12 @@ Hobby: &lt;&lt;textbox &quot;$rollen.Hobby&quot; &quot;&quot;&gt;&gt;
 Occupation: &lt;&lt;textbox &quot;$rollen.Occupation&quot; &quot;&quot;&gt;&gt;
 
 
-[[Go to the next phase|Result]]</tw-passagedata><tw-passagedata pid="11" name="Traits" tags="" position="201.66666666666669,1144.3333333333333">Let&#x27;s find out what your role as a &quot;&lt;&lt;print $fixedrole &gt;&gt;&quot; means to you.
+[[Go to the next phase|Result]]</tw-passagedata><tw-passagedata pid="11" name="Traits" tags="" position="201,1144">Let&#x27;s find out what your role as a &quot;&lt;&lt;print $fixedrole &gt;&gt;&quot; means to you.
 
 [[Okay!|Fixedquestions]]
 [[No! Stop prying!|UNFIT]]</tw-passagedata><tw-passagedata pid="12" name="Question1" tags="" position="199,1413">Answer on question 1:
 &lt;&lt;print $fixedquestion1&gt;&gt;
-</tw-passagedata><tw-passagedata pid="13" name="Result" tags="" position="198.33333333333334,1019.6666666666666">&lt;&lt;set $gekozenrollen to &quot;&quot;&gt;&gt;&lt;&lt;for _i to 0, _name to Object.keys($rollen); _i lt _name.length; _i++&gt;&gt;&lt;&lt;if (Object.keys($rollen)[_i] == &quot;Occupation&quot; || Object.keys($rollen)[_i] == &quot;Hobby&quot;) &amp;&amp; $rollen[_name[_i]] != &quot;&quot;&gt;&gt;&lt;&lt;set $gekozenrollen to $gekozenrollen + $rollen[_name[_i]] + &quot;\n&quot; &gt;&gt;&lt;&lt;elseif $rollen[_name[_i]] == true&gt;&gt;&lt;&lt;set $gekozenrollen to $gekozenrollen + &quot; &quot; + Object.keys($rollen)[_i] + &quot;\n&quot;  &gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;
+</tw-passagedata><tw-passagedata pid="13" name="Result" tags="" position="198,1019">&lt;&lt;set $gekozenrollen to &quot;&quot;&gt;&gt;&lt;&lt;for _i to 0, _name to Object.keys($rollen); _i lt _name.length; _i++&gt;&gt;&lt;&lt;if (Object.keys($rollen)[_i] == &quot;Occupation&quot; || Object.keys($rollen)[_i] == &quot;Hobby&quot;) &amp;&amp; $rollen[_name[_i]] != &quot;&quot;&gt;&gt;&lt;&lt;set $gekozenrollen to $gekozenrollen + $rollen[_name[_i]] + &quot;\n&quot; &gt;&gt;&lt;&lt;elseif $rollen[_name[_i]] == true&gt;&gt;&lt;&lt;set $gekozenrollen to $gekozenrollen + &quot; &quot; + Object.keys($rollen)[_i] + &quot;\n&quot;  &gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;
 
 The following roles are your fixed roles: 
 &lt;&lt;print $gekozenrollen&gt;&gt;
@@ -369,12 +371,12 @@ Changelings are people that try to break away from this sad reality by acting ou
 
 So my question to you is... Are you ready to enter a more humane reality? 
 
-[[Hell yeah! Let&#x27;s start!|Welcome]]</tw-passagedata><tw-passagedata pid="15" name="Youtube-video-embed" tags="Aantekeningen" position="601,102.33333333333334">&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;https://www.youtube.com/embed/o29X_PO6q5s?modestbranding=1rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;
+[[Hell yeah! Let&#x27;s start!|Welcome]]</tw-passagedata><tw-passagedata pid="15" name="Youtube-video-embed" tags="Aantekeningen" position="601,102">&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;https://www.youtube.com/embed/o29X_PO6q5s?modestbranding=1rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-</tw-passagedata><tw-passagedata pid="16" name="Fixedquestions" tags="" position="195.5,1285">What do you like most about this role?
+</tw-passagedata><tw-passagedata pid="16" name="Fixedquestions" tags="" position="195,1285">What do you like most about this role?
 &lt;&lt;textbox &quot;$fixedquestion1&quot; &quot;&quot;&gt;&gt;
 
-[[Next question please.|Question1]]</tw-passagedata><tw-passagedata pid="17" name="UNFIT" tags="" position="318.5,1146">Error in the system.
+[[Next question please.|Question1]]</tw-passagedata><tw-passagedata pid="17" name="UNFIT" tags="" position="318,1146">Error in the system.
 Human does not comply. -deze wil ik dan bijvoorbeeld een waarde geven-</tw-passagedata></tw-storydata></div>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
