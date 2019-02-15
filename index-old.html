@@ -136,11 +136,9 @@ body {
 	background-color: #000;
 	font-family: "Share";
 	font-size: 110%;
-  	margin-left: 0%;
-  	margin-top: 0%;
-	margin-right: 0%;
-  	padding: 10%;
-
+  	margin-left: 15%;
+  	margin-top: 5%;
+	margin-right: 15%;
 }
 
 a {
@@ -221,7 +219,6 @@ input[type=text] {
  		-o-background-size: cover; 
   		background-size: cover;
   		background-color: #000;
-  		height: 100%;
 
 }
 
@@ -232,8 +229,7 @@ input[type=text] {
  		-o-background-size: cover; 
   		background-size: cover;
   		background-color: #000;
-  		loop:infinite;
-		height: 100%;
+  		loop:infinite
 
 
 }
@@ -245,7 +241,6 @@ input[type=text] {
  		-o-background-size: cover; 
   		background-size: cover;
   		background-color: #000;
-  		height: 100%;
 
 }
 
@@ -256,7 +251,6 @@ input[type=text] {
  		-o-background-size: cover; 
   		background-size: cover;
   		background-color: #000;
-  		height: 100%;
 
 }
 
@@ -267,7 +261,6 @@ input[type=text] {
  		-o-background-size: cover; 
   		background-size: cover;
 		background-color: #000;
-  		height: 100%;
 
 }
 
@@ -278,7 +271,7 @@ input[type=text] {
  		-o-background-size: cover; 
   		background-size: cover;
 		background-color: #000;
-		height: 100%;
+
 }
 
 .static2 {
@@ -288,17 +281,22 @@ input[type=text] {
  		-o-background-size: cover; 
   		background-size: cover;
 		background-color: #000;
-		height: 100%;
+
 }
 
-html { height: 100% }
-body { min-height: 100% }
 
-#story {
-    margin: 0;
-	padding: 2,5em;
- 
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -311,34 +309,6 @@ body { min-height: 100% }
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.destroy();
-
-setup.fullscreen = function (element) {
-    if(element.requestFullScreen) {
-        element.requestFullScreen();
-    } else if(element.mozRequestFullScreen) {
-        element.mozRequestFullScreen();
-    } else if(element.webkitRequestFullScreen) {
-        element.webkitRequestFullScreen();
-    }
-}
-
-Macro.add('fullscreen', {
-    handler : function() { 
-
-        var bg = $('body').css('background-color');
-        $('html').css('background-color', bg);
-
-        setup.fullscreen(document.documentElement);
-
-    }
-});
-
-
-
-
-
-
-
 
 
 
@@ -404,11 +374,11 @@ The world is in a state of overacceleration. Society expects us to comply. But w
 &lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Introduction0" tags="protocol" position="1050,700">
 
 
-&lt;center&gt;&lt;i&gt;$name, welcome to the Changelings protocol.
+&lt;center&gt;&lt;i&gt;$name, welcome to the program.
 
-By completing and acting out this protocol in secret you will explore the broken world in a more humane way &lt;/i&gt;
+By completing and acting out this program you&#x27;ll be able to change reality.&lt;/i&gt;
 
-[[true reality is in the eye of the beholder|Introduction1]]
+[[Ahh yes, reality is in the eye of the beholder|Introduction1]]
 &lt;/center&gt;
 </tw-passagedata><tw-passagedata pid="5" name="Main Menu" tags="welcome" position="125,700">&lt;b&gt;&lt;h3&gt;Main Menu&lt;/h3&gt;&lt;/b&gt;\
 [[I&#x27;m new...|New]]
@@ -568,19 +538,14 @@ Choose one role which you want to enhance.
 &lt;&lt;textbox &quot;$printfixedrole&quot; &quot;&quot;&gt;&gt;
 
 [[Next|FixedRole]]
-</tw-passagedata><tw-passagedata pid="14" name="Introduction1" tags="" position="925,700">&lt;h4&gt;&lt;i&gt;Through this protocol you will develop the courage to question the roles you have, and immerse yourself in another true reality.
-The world is turning humans into all predictable mindless perfect and obedient robots.
+</tw-passagedata><tw-passagedata pid="14" name="Introduction1" tags="protocol" position="925,700">&lt;h3&gt;&lt;i&gt;By becoming a Changeling you will question the roles you have, and immerse in reality. Changelings is a way to help you deal with this ever accelerating world. This world that turns humans into mindless obedient robots. In this world it is highly possible that you will break down at some point, or you will collect too much dust by executing old processes. Through playing this game you can rediscover and understand your human qualities. 
 
-&lt;&lt;timed 0.4s t8n&gt;&gt;In this world it almost feels like we are made to break. And if we don&#x27;t watch out we will collect too much dust by executing old processes. Until we combust in flames.&lt;&lt;/timed&gt;&gt;
+Changelings are people that try to break away from this sad reality by acting out an alter ego in daily life. To live in a reality in which we value humanity, we&#x27;d have to create it first. By reflecting upon the roles you have been put in, you will create a starting point for change. 
 
-&lt;&lt;timed 1.2s t8n&gt;&gt;The goal is clear, be a rebel dad or a fixer friend, someone that is just a little special.&lt;&lt;/timed&gt;&gt;
+So my question to you is... 
+Are you ready to enter another reality? &lt;/i&gt;&lt;/h3&gt;
 
-&lt;&lt;timed 1.6s t8n&gt;&gt;Changelings are people that try to break away from this sad reality by continuously transforming who they are and what they do. It is about time to start living in a reality in which we can value our humanity. &lt;&lt;/timed&gt;&gt;
-
-&lt;&lt;timed 2s t8n&gt;&gt;As a Changeling you will be part of the next frontier in reality warfare.&lt;&lt;/timed&gt;&gt; 
-
-&lt;&lt;timed 2.4s t8n&gt;&gt;So my question to you is... &lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 2.8s t8n&gt;&gt;What skills do you bring to the table?&lt;&lt;/timed&gt;&gt;&lt;/i&gt;&lt;/h4&gt;&lt;&lt;timed 3.2s t8n&gt;&gt;[[Ok, let&#x27;s start!|Introduction2]]&lt;&lt;/timed&gt;&gt;
+[[Ok, let&#x27;s start!|Introduction2]]
 
 &lt;&lt;playlist2&gt;&gt;\
 &lt;&lt;playlist volume 0.40&gt;&gt;\
@@ -596,7 +561,7 @@ Preload:
 &lt;/video&gt;</tw-passagedata><tw-passagedata pid="16" name="Fixedquestion1" tags="" position="202,2400">What do you like most about this role?
 &lt;&lt;textbox &quot;$fixedquestion1&quot; &quot;&quot;&gt;&gt;
 
-[[Next question please.|Fixedquestion2]]</tw-passagedata><tw-passagedata pid="17" name="UNFIT" tags="slowdownred" position="1022,8">Error in the system.
+[[Next question please.|Fixedquestion2]]</tw-passagedata><tw-passagedata pid="17" name="UNFIT" tags="slowdownred" position="1375,1500">Error in the system.
 Human does not comply.
 
 &lt;h3&gt;connection lost&lt;/h3&gt;</tw-passagedata><tw-passagedata pid="18" name="Longintro" tags="" position="300,800">Ahh so you are the curious type...
@@ -615,80 +580,137 @@ What do you like most about this role?
 
 [[Next question please.|Fixedquestionsanswers]]</tw-passagedata><tw-passagedata pid="21" name="Old intro" tags="" position="909,1">Are you an angst-driven, fear-ridden human? Do you feel like that the things you improve are never good enough? Are you tired, lost in a world full of systems? Stuck in roles that you&#x27;re sick of fulfilling? Are you desperately escaping reality, to just not deal with it? 
 
-Let me tell you, there&#x27;s nothing wrong with you. You are just a result of a system that can be called inhumanely at best.</tw-passagedata><tw-passagedata pid="22" name="Begin" tags="" position="250,300">&lt;center&gt;&lt;img src=&quot;images/light6.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
-&lt;i&gt;\
-[[hi there|WelcomeTo]]
-&lt;/i&gt;&lt;/center&gt;\
+Let me tell you, there&#x27;s nothing wrong with you. You are just a result of a system that can be called inhumanely at best.</tw-passagedata><tw-passagedata pid="22" name="Begin" tags="" position="250,300">&lt;center&gt;&lt;img src=&quot;images/light5once.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
+&lt;i&gt;[[hi there|WelcomeTo]]&lt;/i&gt;&lt;/center&gt;\
+&lt;&lt;audio &quot;hithere&quot; play&gt;&gt;\
 &lt;&lt;playlist volume 0.20&gt;&gt;\
-&lt;&lt;timed 10s&gt;&gt;&lt;&lt;goto &quot;WelcomeTo&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="introend" tags="" position="1050,450">[[Enter|Video]]</tw-passagedata><tw-passagedata pid="24" name="Name" tags="" position="500,300">&lt;center&gt;&lt;img src=&quot;images/light6.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
-&lt;i&gt;insert your real name&lt;/i&gt;
+</tw-passagedata><tw-passagedata pid="23" name="introend" tags="" position="1050,450">[[Enter|Video]]</tw-passagedata><tw-passagedata pid="24" name="Name" tags="" position="500,300">&lt;center&gt;&lt;img src=&quot;images/light5once.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
+&lt;i&gt;please tell me your real name&lt;/i&gt;
 &lt;&lt;textbox &quot;$playername&quot; &quot;&quot;&gt;&gt; 
 [[ok|Hey]]
+&lt;&lt;audio &quot;name&quot; play&gt;&gt;
 &lt;/center&gt;
-</tw-passagedata><tw-passagedata pid="25" name="Hey" tags="" position="625,300">&lt;center&gt;&lt;img src=&quot;images/light6.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
-&lt;i&gt;&lt;&lt;print $playername&gt;&gt; do you want to connect to the protocol?&lt;/i&gt;
-[[yes|ConnectionEstablished]]
-[[no|Start2]]
-&lt;&lt;playlist volume 0.20 fadeoverto 3 0.05&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="25" name="Hey" tags="" position="625,300">&lt;center&gt;&lt;img src=&quot;images/light5once.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
+&lt;i&gt;Hey &lt;&lt;print $playername &gt;&gt;
+Are you willing to establish an connection?&lt;/i&gt;
+[[yes|CompleteConnection]]
+[[no|Start]]&lt;&lt;playlist volume 0.20 fadeoverto 3 0.05&gt;&gt;\
 &lt;/center&gt;\
-</tw-passagedata><tw-passagedata pid="26" name="Slowdownreality" tags="" position="1007,301">&lt;center&gt;&lt;img src=&quot;images/slowdown.gif&quot; width=&quot;700&quot; height=&quot;261&quot; alt=&quot;changelings&quot;&gt;
+&lt;&lt;audio &quot;hey&quot; play&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="26" name="Slowdownreality" tags="" position="875,300">&lt;center&gt;&lt;img src=&quot;images/slowdown.gif&quot; width=&quot;700&quot; height=&quot;261&quot; alt=&quot;changelings&quot;&gt;
 &lt;h3&gt;...deaccelerating reality...&lt;/h3&gt;&lt;i&gt;
+[[unlink self from reality|RemovingPreassumptions]]&lt;/i&gt;&lt;/center&gt;
 
-[[Now unlink the self from reality|RemovingPreassumptions]]&lt;/i&gt;&lt;/center&gt;
-&lt;&lt;playlist volume 0.05 fadeoverto 6 0&gt;&gt;\
+&lt;&lt;playlist volume 0.05 fadeoverto 6 0&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="27" name="CompleteConnection" tags="" position="890,299">&lt;center&gt;&lt;img src=&quot;images/light6.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
-&lt;i&gt;Ok. Let&#x27;s slow you down first.&lt;/i&gt;
-[[initiate slowing protocol|Slowdownreality]]&lt;/center&gt;</tw-passagedata><tw-passagedata pid="28" name="RemovingPreassumptions" tags="slowdown" position="1128,301">&lt;center&gt;&lt;img src=&quot;images/slowdown.gif&quot; width=&quot;700&quot; height=&quot;261&quot; alt=&quot;changelings&quot;&gt;
+</tw-passagedata><tw-passagedata pid="27" name="CompleteConnection" tags="" position="750,300">&lt;center&gt;&lt;img src=&quot;images/light5.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
+&lt;i&gt;We need to do a few things to complete our connection.&lt;/i&gt;
+[[first up: slow down reality|Slowdownreality]]&lt;/center&gt;</tw-passagedata><tw-passagedata pid="28" name="RemovingPreassumptions" tags="slowdown" position="1000,300">
 
-&lt;center&gt;&lt;i&gt;&lt;h3&gt;...removing preassumptions of the self...&lt;/h3&gt;&lt;/i&gt;
 
-[[enter a clean state|EnteringMindstate]]&lt;/center&gt;
+
+
+&lt;center&gt;&lt;i&gt;&lt;h3&gt;...removing preassumptions of the self...&lt;/h3&gt; 
+
+
+
+we need you to enter a new state of mind&lt;/i&gt;
+[[link self to metaverse|EnteringMindstate]]&lt;/center&gt;
 &lt;&lt;audio &quot;pop&quot; play&gt;&gt;
-</tw-passagedata><tw-passagedata pid="29" name="EnteringMindstate" tags="slowdown" position="1272,301">&lt;center&gt;&lt;img src=&quot;images/slowdown.gif&quot; width=&quot;700&quot; height=&quot;261&quot; alt=&quot;changelings&quot;&gt;
+</tw-passagedata><tw-passagedata pid="29" name="EnteringMindstate" tags="slowdown" position="1124,300">
+
+
+
+
 &lt;center&gt;&lt;i&gt;&lt;h3&gt;...entering mindstate...&lt;/h3&gt;&lt;/i&gt;
+
+
+
 &lt;b&gt;connected to metaverse&lt;/b&gt;
-[[complete initiation|8]]&lt;/center&gt;</tw-passagedata><tw-passagedata pid="30" name="ConnectionEstablished" tags="biglight" position="754,299">&lt;center&gt;&lt;&lt;set $seconds to 5&gt;&gt;\
+[[complete initiation|ConnectionEstablished]]&lt;/center&gt;</tw-passagedata><tw-passagedata pid="30" name="ConnectionEstablished" tags="biglight" position="1274,300">&lt;center&gt;&lt;&lt;set $seconds to 5&gt;&gt;\
 &lt;i&gt;trying to establish a connection...&lt;/i&gt;
+
+
+
+
+
+
+
+
 &lt;span id=&quot;countdown&quot;&gt;\
 &lt;b&gt;$seconds&lt;/b&gt;
-[[click here to connect|CompleteConnection]]&lt;/span&gt;\
+
+
+
+
+
+
+
+
+[[connect|8]]&lt;/span&gt;\
 &lt;&lt;silently&gt;&gt;
 &lt;&lt;repeat 1s&gt;&gt;
 &lt;&lt;set $seconds to $seconds - 1&gt;&gt;
 &lt;&lt;if $seconds gt 0&gt;&gt;
 &lt;&lt;replace &quot;#countdown&quot;&gt;&gt;\
 &lt;b&gt;$seconds&lt;/b&gt;
-[[click here to connect|CompleteConnection]]
+
+
+
+
+
+
+
+
+[[connect|8]]
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;else&gt;&gt;
 &lt;&lt;replace &quot;#countdown&quot;&gt;&gt;&lt;u&gt;Connection failed.&lt;/u&gt;
+
+
+
+
+
+
+
+
 [[retry|ConnectionEstablished]]
-&lt;&lt;/replace&gt;&gt;\
-&lt;&lt;stop&gt;&gt;\
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;/repeat&gt;&gt;\
-&lt;&lt;/silently&gt;&gt;\
-&lt;/center&gt;\</tw-passagedata><tw-passagedata pid="31" name="8" tags="static2" position="1400,300">&lt;center&gt;\
-&lt;span id=&quot;connectionestablished&quot;&gt;connection established&lt;/span&gt;\
-&lt;&lt;timed 2s&gt;&gt;&lt;&lt;replace &quot;#connectionestablished&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/replace&gt;&gt;
+&lt;&lt;stop&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/repeat&gt;&gt;
+&lt;&lt;/silently&gt;&gt;
+&lt;/center&gt;
 
-[img[images/title.gif][9]]
-&lt;&lt;playlist1 play&gt;&gt;\
-&lt;&lt;playlist volume 0.70&gt;&gt;\
-&lt;/center&gt;\
 
-&lt;&lt;timed 7s&gt;&gt;&lt;&lt;goto &quot;9&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Start" tags="slowdown" position="130,148">&lt;center&gt;[[. . .|Start2]]
-&lt;&lt;timed 5s&gt;&gt;&lt;&lt;goto &quot;Start2&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;link &#x27;Fullscreen Mode&#x27;&gt;&gt;
-	&lt;&lt;fullscreen&gt;&gt;
-&lt;&lt;/link&gt;&gt;&lt;/center&gt;</tw-passagedata><tw-passagedata pid="33" name="WelcomeTo" tags="" position="375,300">&lt;center&gt;\
-&lt;img src=&quot;images/light6.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
-&lt;i&gt;\
-[[nice to meet you|Name]]\
-&lt;/i&gt;&lt;/center&gt;\</tw-passagedata><tw-passagedata pid="34" name="StoryInit" tags="" position="250,0">&lt;&lt;cacheaudio &quot;hithere&quot; &quot;music/hithere.wav&quot;&gt;&gt;
+
+
+
+</tw-passagedata><tw-passagedata pid="31" name="8" tags="static2" position="1400,300">
+
+
+
+
+&lt;center&gt;[img[images/title.gif][9]]&lt;/center&gt;
+&lt;&lt;playlist1&gt;&gt;
+&lt;&lt;playlist volume 0.70&gt;&gt;
+
+/% Hier komt een intro sequence video. 
+Het licht in een ander perspectief laten zien. In space met 3d objecten ofzo. %/</tw-passagedata><tw-passagedata pid="32" name="Start" tags="slowdown" position="0,300">&lt;center&gt;&lt;video autoplay loop muted preload style=&quot; width:640px;  height:360px;&quot;&gt;
+	&lt;source src=&quot;Changelings_web.webm&quot; type=&quot;video/webm&quot;&gt;
+	Your browser does not support the HTML5 video tag.
+&lt;/video&gt;\
+
+
+[[...|Light]]&lt;/center&gt;\
+&lt;&lt;playlist0&gt;&gt;\
+&lt;&lt;playlist volume 0.80&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="33" name="WelcomeTo" tags="" position="375,300">&lt;center&gt;&lt;img src=&quot;images/light5once.gif&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;changelings&quot;&gt;
+&lt;i&gt;[[nice to meet you|Name]]&lt;/i&gt;&lt;/center&gt;
+&lt;&lt;audio &quot;welcome&quot; play&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="34" name="StoryInit" tags="" position="250,0">&lt;&lt;cacheaudio &quot;hithere&quot; &quot;music/hithere.wav&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;welcome&quot; &quot;music/welcome.wav&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;name&quot; &quot;music/name.wav&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;intro&quot; &quot;music/The_303_-_03_-_Tizebel_Monokider.mp3&quot;&gt;&gt;
@@ -718,33 +740,43 @@ Let me tell you, there&#x27;s nothing wrong with you. You are just a result of a
 &lt;&lt;playlist stop&gt;&gt;\
 &lt;&lt;setplaylist &quot;intro2&quot;&gt;&gt;\
 &lt;&lt;playlist play&gt;&gt;\
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="-saved- Javascripts" tags="" position="500,1">Javascripts
+&lt;&lt;/widget&gt;&gt;
+
+
+
+</tw-passagedata><tw-passagedata pid="35" name="-saved- Javascripts" tags="" position="500,1">Javascripts
 
 UIBar.destroy();
 UIBar.stow();
-
-
-http://twinery.org/questions/3568/tap-to-show-new-paragraph-sugarcube-2</tw-passagedata><tw-passagedata pid="36" name="-saved- lines" tags="" position="625,0">To continue please download this form and print it.
+</tw-passagedata><tw-passagedata pid="36" name="-saved- lines" tags="" position="625,0">To continue please download this form and print it.
 &lt;a href=&quot;analog.pdf&quot;&gt;download pdf&lt;/a&gt;
 
 
-</tw-passagedata><tw-passagedata pid="37" name="9" tags="" position="1525,300">&lt;i&gt;Please sign the following:&lt;/i&gt;
+</tw-passagedata><tw-passagedata pid="37" name="9" tags="" position="1525,300">
+&lt;i&gt;Please sign the following:&lt;/i&gt;
 
 Yes I will...
-■ keep this program confidential
-■ meet others anonymously
-■ never reveal my true identity
-■ do no harm
+... keep this program confidential, 
+... meet others anonymously,
+... never reveal my true identity,
+... do no harm.
 
 sign here:
 &lt;&lt;textbox &quot;$name&quot; &quot;&quot;&gt;&gt;
 [[ok|namecheck]]
 
 
-/% extra passage voor meer introductie. confidential. Je mag je naasten hier niet over inlichten. %/</tw-passagedata><tw-passagedata pid="38" name="Light" tags="biglight" position="128,301">&lt;center&gt;\
-[[. . .|Begin]]
-&lt;/center&gt;\
-&lt;&lt;timed 10s&gt;&gt;&lt;&lt;goto &quot;Begin&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="TableTraits" tags="" position="350,1450">&lt;&lt;set $traits to {
+/% extra passage voor meer introductie. confidential. Je mag je naasten hier niet over inlichten. %/</tw-passagedata><tw-passagedata pid="38" name="Light" tags="biglight" position="129,299">
+
+
+
+
+
+
+
+
+&lt;center&gt;[[...|Start]]&lt;/center&gt;\
+</tw-passagedata><tw-passagedata pid="39" name="TableTraits" tags="" position="350,1450">&lt;&lt;set $traits to {
 dramatic : false,
 caring : false,
 copying : false,
@@ -843,7 +875,7 @@ Which traits do you want to choose? Pick three.
 [[Next|Traits]]
 </tw-passagedata><tw-passagedata pid="41" name="Traits" tags="" position="600,1450">&lt;i&gt;You want to use the following traits: &quot;&lt;&lt;print $printtrait1&gt;&gt;&quot; &quot;&lt;&lt;print $printtrait2&gt;&gt;&quot; &quot;&lt;&lt;print $printtrait3&gt;&gt;&quot;.&lt;/i&gt;
 
-[[Let&#x27;s continue|IntroChooseRole1]]
+[[Let&#x27;s continue|IntroEnhanced]]
 [[Show my Changeling.|Review Character]]</tw-passagedata><tw-passagedata pid="42" name="TableEnhanceRole" tags="" position="350,1600">&lt;&lt;set $enhanced to {
 summoner : false,
 beasttamer : false,
@@ -926,7 +958,7 @@ Which enhanced role do you want to choose?
 
 
 [[Next|EnhancedRole]]
-</tw-passagedata><tw-passagedata pid="44" name="EnhancedRole" tags="" position="590,1599">Now that I know you want to use the following enhanced role: &quot;&lt;&lt;print $printenhanced&gt;&gt;&quot;. We can continue with the program.
+</tw-passagedata><tw-passagedata pid="44" name="EnhancedRole" tags="" position="600,1600">Now that I know you want to use the following enhanced role: &quot;&lt;&lt;print $printenhanced&gt;&gt;&quot;. We can continue with the program.
 
 [[Okay!|IntroDescription]]
 [[Show my Changeling.|Review Character]]</tw-passagedata><tw-passagedata pid="45" name="IntroSkills" tags="" position="225,1900">[[Okay!|TableSkills]]</tw-passagedata><tw-passagedata pid="46" name="IntroFixedRole" tags="" position="225,1300">
@@ -950,7 +982,7 @@ body {
   	margin-top: 5%;
 	margin-right: 20%
 }</tw-passagedata><tw-passagedata pid="53" name="Description" tags="" position="600,1750">[[Okay!|IntroSkills]]
-[[Show my Changeling.|Review Character]]</tw-passagedata><tw-passagedata pid="54" name="IntroDescription" tags="slowdown" position="85,1758">&lt;center&gt;[img[images/fixedrole.jpg][RunFrom]]&lt;/center&gt;</tw-passagedata><tw-passagedata pid="55" name="TableDescription" tags="" position="350,1750">It is time to describe your Changeling
+[[Show my Changeling.|Review Character]]</tw-passagedata><tw-passagedata pid="54" name="IntroDescription" tags="slowdown" position="99,1750">&lt;center&gt;[img[images/fixedrole.jpg][RunFrom]]&lt;/center&gt;</tw-passagedata><tw-passagedata pid="55" name="TableDescription" tags="" position="350,1750">It is time to describe your Changeling
 
 
 Tell me about your reason why you have chosen your fixed role.
@@ -959,7 +991,7 @@ Tell me about your reason why you have chosen your fixed role.
 
 [[Next|TableDescriptionResults]]
 </tw-passagedata><tw-passagedata pid="56" name="TableDescriptionResults" tags="" position="475,1750">[[Next|Description]]
-</tw-passagedata><tw-passagedata pid="57" name="Untitled Passage" tags="" position="1299,2">This is all we need to help you become a Changeling.</tw-passagedata><tw-passagedata pid="58" name="Variable storage" tags="" position="1431,5">$name
+</tw-passagedata><tw-passagedata pid="57" name="Untitled Passage" tags="" position="1350,1625">This is all we need to help you become a Changeling.</tw-passagedata><tw-passagedata pid="58" name="Variable storage" tags="" position="1725,125">$name
 $social
 $explore
 $combat
@@ -1000,203 +1032,13 @@ sign here:
 - Reform
 
 - Ending
-</tw-passagedata><tw-passagedata pid="73" name="RunTo" tags="" position="100,1451">Running towards what?
+
+- Linking to chatroom
+
+</tw-passagedata><tw-passagedata pid="73" name="RunTo" tags="" position="76,1449">Running towards what?
 [[IntroTraits|IntroTraits]]</tw-passagedata><tw-passagedata pid="74" name="RunFrom" tags="" position="226,1750">What are you running from?
 
-[[Okay!|TableDescription]]</tw-passagedata><tw-passagedata pid="75" name="Beginning" tags="slowdown" position="386,151">&lt;center&gt;&lt;video autoplay loop muted preload style=&quot; width:640px;  height:360px;&quot;&gt;
-	&lt;source src=&quot;Changelings_web.webm&quot; type=&quot;video/webm&quot;&gt;
-	Your browser does not support the HTML5 video tag.
-&lt;/video&gt;\
-
-
-[[. . .|Light]]&lt;/center&gt;\
-&lt;&lt;playlist0 play&gt;&gt;
-&lt;&lt;timed 22s&gt;&gt;&lt;&lt;goto &quot;Light&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="IntroChooseRole1" tags="" position="1175,1500">Choosing Role Sequence enabled.
-
-In this sequence we will find out which roles would fit your need.
-Choose based on...
-
-Based on various forms: Illustrations to video to poem. To just a word.
-
-Others
-Self
-
-Mind
-Body
-
-Destruction
-Creation
-
-Silent
-Outspoken
-
-Pragmatic
-Ritualistic
-
-Physical
-Mental
-
-[[IntroChooseRole2]]
-
-</tw-passagedata><tw-passagedata pid="77" name="OthersSelf" tags="" position="1426,1501">&lt;center&gt;\
-[[Self|MindBody][$self to &quot;true&quot;]]
-or
-[[Others|MindBody][$others to &quot;true&quot;]]
-&lt;/center&gt;\
-</tw-passagedata><tw-passagedata pid="78" name="MindBody" tags="" position="1551,1501">&lt;center&gt;\
-[[Mind|DestructionCreation][$mind to &quot;true&quot;]]
-or
-[[Body|DestructionCreation][$body to &quot;true&quot;]]
-&lt;/center&gt;\
-
-</tw-passagedata><tw-passagedata pid="79" name="DestructionCreation" tags="" position="1675,1501">&lt;center&gt;\
-[[Destruction|SilentOutspoken][$destruction to &quot;true&quot;]]
-or
-[[Creation|SilentOutspoken][$creation to &quot;true&quot;]]
-&lt;/center&gt;\
-
-</tw-passagedata><tw-passagedata pid="80" name="SilentOutspoken" tags="" position="1801,1500">&lt;center&gt;\
-[[Silent|PragmaticRitualistic][$silent to &quot;true&quot;]]
-or
-[[Outspoken|PragmaticRitualistic][$outspoken to &quot;true&quot;]]
-&lt;/center&gt;\
-</tw-passagedata><tw-passagedata pid="81" name="PragmaticRitualistic" tags="" position="1926,1501">&lt;center&gt;\
-[[Pragmatic|PhysicalMental][$pragmatic to &quot;true&quot;]]
-or
-[[Ritualistic|PhysicalMental][$ritualistic to &quot;true&quot;]]
-&lt;/center&gt;\
-</tw-passagedata><tw-passagedata pid="82" name="PhysicalMental" tags="" position="2052,1500">&lt;center&gt;\
-[[Physical|ResultChooseRole][$physical to &quot;true&quot;]]
-or
-[[Mental|ResultChooseRole][$mental to &quot;true&quot;]]
-&lt;/center&gt;\
-</tw-passagedata><tw-passagedata pid="83" name="IntroChooseRole2" tags="" position="1299,1500">[[OthersSelf]]</tw-passagedata><tw-passagedata pid="84" name="ResultChooseRole" tags="" position="2191,1499">&lt;&lt;if $self and $mind or $body and $creation and $outspoken and $ritualistic and $physical&gt;&gt;\
-Summoner
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self or $others and $body and $creation or $destruction and $outspoken and $pragmatic and $physical&gt;&gt;\
-Beasttamer
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $body and $destruction and $silent or $outspoken and $pragmatic and $physical&gt;&gt;\
-Warrior
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $mind and $creation and $silent or $outspoken and $ritualistic and $mental&gt;&gt;\
-Wizard
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $body and $destruction and $outspoken and $pragmatic and $physical&gt;&gt;\
-Barbarian
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $body or $body and $destruction or $creation and $silent and $pragmatic and $physical or $mental&gt;&gt;\
-Hunter
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $body and $creation and $silent and $pragmatic and $physical&gt;&gt;\
-Trapper
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $mind and $creation or $destruction and $silent and $pragmatic or $ritualistic and $mental&gt;&gt;\
-Alchemist
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $mind and $destruction or $creation and $outspoken and $ritualistic and $mental&gt;&gt;\
-Warlock
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $body or $mind and $creation or $destruction and $silent and $pragmatic and $physical&gt;&gt;\
-Ninja
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $body and $destruction or $creation and $silent and $pragmatic and $physical&gt;&gt;\
-Rogue
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $mind and $creation and $silent and $pragmatic and $physical&gt;&gt;\
-Tinkerer
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $self and $body or $mind and $creation and $silent and $pragmatic and $mental&gt;&gt;\
-Monk
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $others and $body and $creation or $destruction and $silent or $outspoken and $ritualistic and $physical&gt;&gt;\
-Paladin
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $others and $body and $creation or $destruction and $silent and $pragmatic and $physical&gt;&gt;\
-Knight
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $others and $body and $creation and $silent and $ritualistic and $physical&gt;&gt;\
-Defender
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $others and $mind or $body and $creation and $silent or $outspoken and $ritualistic and $mental&gt;&gt;\
-Druid
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $others or $self and $mind and $creation and $outspoken or $silent and $ritualistic or $pragmatic and $mental&gt;&gt;\
-Sage
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $others and $mind and $creation and $silent or $outspoken and $ritualistic and $mental&gt;&gt;\
-Mystic
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $others and $body and $creation or $destruction and $outspoken and $ritualistic and $physical&gt;&gt;\
-Shaman
-&lt;&lt;/if&gt;&gt;\
-&lt;&lt;if $others or $self and $body or $mind and $creation and $outspoken and $pragmatic and $physical or $mental&gt;&gt;\
-Bard
-&lt;&lt;/if&gt;&gt;\
-[[IntroDescription]]</tw-passagedata><tw-passagedata pid="85" name="Role - Test" tags="" position="2422,1494">Summoner: Self, Mind/Body, Creation, Outspoken, Ritualistic, Physical/Mental
-
-&lt;&lt;set $summoner to [&quot;Self&quot;, &quot;Mind&quot;, &quot;Body&quot;, &quot;Creation&quot;, &quot;Outspoken&quot;, &quot;Ritualistic&quot;, &quot;Physical&quot;, &quot;Mental&quot;]&gt;&gt;
-
-&lt;&lt;if $OthersSelf is [&quot;Self&quot;, &quot;Mind&quot;, &quot;Body&quot;, &quot;Creation&quot;, &quot;Outspoken&quot;, &quot;Ritualistic&quot;, &quot;Physical&quot;, &quot;Mental&quot;]
-
-
-
-&lt;&lt;if $Self is [&quot;Self&quot;, &quot;Mind&quot;, &quot;Body&quot;, &quot;Creation&quot;, &quot;Outspoken&quot;, &quot;Ritualistic&quot;, &quot;Physical&quot;, &quot;Mental&quot;]
-
-&lt;&lt;if $hullBreached&gt;&gt;
-	&lt;&lt;if $OthersSelf&gt;&gt;
-		&lt;&lt;include &quot;That was close&quot;&gt;&gt;
-	&lt;&lt;elseif $wearingSoftSuit&gt;&gt;
-		&lt;&lt;include &quot;Hole in suit&quot;&gt;&gt;
-	&lt;&lt;else&gt;&gt;
-		&lt;&lt;include &quot;You die&quot;&gt;&gt;
-	&lt;&lt;/if&gt;&gt;
-
-
-$ChooseRole
-
-&lt;&lt;print $OthersSelf&gt;&gt;
-&lt;&lt;print $MindBody&gt;&gt;
-&lt;&lt;print $DestructionCreation&gt;&gt;
-&lt;&lt;print $SilentOutspoken&gt;&gt;
-&lt;&lt;print $PragmaticRitualistic&gt;&gt;
-&lt;&lt;print $PhysicalMental&gt;&gt;</tw-passagedata><tw-passagedata pid="86" name="PrintRole3" tags="" position="1303,1667">&lt;&lt;print $othersself&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="tryout3" tags="" position="2246,1781">&lt;&lt;if $others&gt;&gt;
-Self
-&lt;&lt;else&gt;&gt;
-Others
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="88" name="Untitled Passage 1" tags="" position="1179,1667">Do you want to focus more on others or on yourself
-
-IMAGE multiple people
-[[Others|PrintRole3][$othersself.self to true]]
-
-IMAGE mirror  
-[[Self|PrintRole3][$othersself.others to true]]</tw-passagedata><tw-passagedata pid="89" name="Untitled Passage 3" tags="" position="2052,1781">[[Self|tryout3][$self]]
-or
-[[Others|tryout3][$others]]
-
-</tw-passagedata><tw-passagedata pid="90" name="Untitled Passage 4" tags="" position="1800,1801">You have chosen the following properties for your role enhancement.
-The following roles will fit your goal.
-
-$self
-$mind
-$destruction
-$silent
-$pragmatic
-$physical
-
-$summoner
-</tw-passagedata><tw-passagedata pid="91" name="Untitled Passage 2" tags="" position="1533,1706">plan.
-
-Keuzes maken tussen verschillende rollen types.
-
-De lijst moet exact gelijk staan aan. anders print je het niet uit.
-</tw-passagedata><tw-passagedata pid="92" name="saved audio code" tags="" position="1145,5">&lt;&lt;audio &quot;hithere&quot; play&gt;&gt;\
-&lt;&lt;audio &quot;name&quot; play&gt;&gt;
-&lt;&lt;audio &quot;hey&quot; play&gt;&gt;\
-&lt;&lt;audio &quot;welcome&quot; play&gt;&gt;\
-</tw-passagedata><tw-passagedata pid="93" name="Start2" tags="protocol" position="256,149">&lt;center&gt;[[...|Beginning]]&lt;/center&gt;
-&lt;&lt;timed 5s&gt;&gt;&lt;&lt;goto &quot;Beginning&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
-</tw-passagedata></tw-storydata></div>
+[[Okay!|TableDescription]]</tw-passagedata></tw-storydata></div>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(/^(?:(?:uncaught\s+(?:exception:\s+)?)?error:\s+)+/i,"")+".":": unknown error."),n&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}();!function(){function e(e,t){var a=String(e);switch(t){case"start":return a&&r.test(a)?a.replace(r,""):a;case"end":return a&&n.test(a)?a.replace(n,""):a;default:throw new Error('_trimFrom called with incorrect where parameter value: "'+t+'"')}}function t(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n="undefined"==typeof t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var r=/^[\s\u00A0\uFEFF][\s\u00A0\uFEFF]*/,n=/[\s\u00A0\uFEFF][\s\u00A0\uFEFF]*$/;Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(t===n||t!==t&&n!==n)return!0}return!1}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(e,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(e,10);return i<=a?n:t(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(e,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(e,10);return i<=a?n:n+t(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return e(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return e(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return e(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return e(this,"end")}})}(),function(){function _random(){if(0===arguments.length)throw new Error("_random called with insufficient parameters");var e=void 0,t=void 0;if(1===arguments.length?(e=0,t=arguments[0]):(e=arguments[0],t=arguments[1]),e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e,t,r){var n=t,a=r;return 2===arguments.length&&(a=n,n=0),Array.isArray(e)?e.random(n,a):e.hasOwnProperty("length")?[].concat(_toConsumableArray(e)).random(n,a):void 0}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;(r=e.call(this,t,r))!==-1;)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=Array.prototype.splice,a=Array.prototype.concat.apply([],arguments),i=[],o=0,s=a.length;o<s;++o)for(var u=a[o],l=0;(l=t.call(this,u,l))!==-1;)r.apply(i,n.call(this,l,1));return i}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.reduce.call(this,function(e,t){return e.concat(Array.isArray(t)?t.flatten():t)},[])}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var r=this.length>>>0;if(0!==r){var n=e,a=t;return 1===arguments.length&&(a=n,n=0),null==n?n=0:n<0?(n=r+n,n<0&&(n=0)):n>=r&&(n=r-1),null==a?a=r-1:a<0?(a=r+a,a<0&&(a=r-1)):a>=r&&(a=r-1),Array.prototype.splice.call(this,_random(n,a),1)[0]}}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var r=this.length>>>0;if(0!==r){var n=e,a=t;return 1===arguments.length&&(a=n,n=0),null==n?n=0:n<0?(n=r+n,n<0&&(n=0)):n>=r&&(n=r-1),null==a?a=r-1:a<0?(a=r+a,a<0&&(a=r-1)):a>=r&&(a=r-1),this[_random(n,a)]}}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0!==e){for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1)),n=[this[r],this[t]];this[t]=n[0],this[r]=n[1]}return this}}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function e(t,r,n){var e=Number(t);return Number.isNaN(e)?NaN:e.clamp(r,n)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||!function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch("undefined"==typeof i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return String.prototype.indexOf.apply(this,arguments)!==-1}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;(n=t.call(this,e,n))!==-1;)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n,a<0&&(a=0)):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return"undefined"!=typeof r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return n===-1?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return n===-1?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e={userAgent:navigator.userAgent.toLowerCase()};return e.isGecko=navigator&&"Gecko"===navigator.product&&!/webkit|trident/.test(e.userAgent),e.isIE=/msie|trident/.test(e.userAgent)&&!e.userAgent.includes("opera"),e.ieVersion=function(){var t=/(?:msie\s+|rv:)(\d{1,2}\.\d)/.exec(e.userAgent);return t?Number([1]):0}(),e.isOpera=e.userAgent.includes("opera")||e.userAgent.includes(" opr/"),e.operaVersion=function(){var t=new RegExp((/applewebkit|chrome/.test(e.userAgent)?"opr":"version")+"\\/(\\d{1,2}\\.\\d+)"),r=t.exec(e.userAgent);return r?Number(r[1]):0}(),e.isMobile=Object.freeze({Android:/android/.test(e.userAgent),BlackBerry:/blackberry/.test(e.userAgent),iOS:/ip(?:hone|ad|od)/.test(e.userAgent),Windows:/iemobile/.test(e.userAgent),any:function(){var t=e.isMobile;return t.Android||t.BlackBerry||t.iOS||t.Windows}}),Object.freeze(e)}(),Has=function(){function e(e){try{if(null!=e&&e.length>=0){var t="SugarCube.WebStorage.Test",r="1701 Guilty Scott";if(e.setItem(t,r),e.getItem(t)===r)return e.removeItem(t),!0}}catch(e){}return!1}return Object.freeze({audio:"function"==typeof document.createElement("audio").canPlayType,fileAPI:"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15),geolocation:"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition,localStorage:"localStorage"in window&&e(window.localStorage),sessionStorage:"sessionStorage"in window&&e(window.sessionStorage)})}(),_ref4=function(){function e(t){if("object"!==("undefined"==typeof t?"undefined":_typeof(t))||null==t)return t;if("function"==typeof t.clone)return t.clone(!0);if(t.nodeType&&"function"==typeof t.cloneNode)return t.cloneNode(!0);var r=void 0;return Array.isArray(t)?r=[]:t instanceof Date?r=new Date(t.getTime()):t instanceof Map?(r=new Map,t.forEach(function(t,n){r.set(n,e(t))})):t instanceof RegExp?r=new RegExp(t):t instanceof Set?(r=new Set,t.forEach(function(t){r.add(e(t))})):r=Object.create(Object.getPrototypeOf(t)),Object.keys(t).forEach(function(n){return r[n]=e(t[n])}),r}function t(e){for(var t=document.createDocumentFragment(),r=document.createElement("p"),n=void 0;null!==(n=e.firstChild);){if(n.nodeType===Node.ELEMENT_NODE){var a=n.nodeName.toUpperCase();switch(a){case"BR":if(null!==n.nextSibling&&n.nextSibling.nodeType===Node.ELEMENT_NODE&&"BR"===n.nextSibling.nodeName.toUpperCase()){e.removeChild(n.nextSibling),e.removeChild(n),t.appendChild(r),r=document.createElement("p");continue}if(!r.hasChildNodes()){e.removeChild(n);continue}break;case"ADDRESS":case"ARTICLE":case"ASIDE":case"BLOCKQUOTE":case"CENTER":case"DIV":case"DL":case"FIGURE":case"FOOTER":case"FORM":case"H1":case"H2":case"H3":case"H4":case"H5":case"H6":case"HEADER":case"HR":case"MAIN":case"NAV":case"OL":case"P":case"PRE":case"SECTION":case"TABLE":case"UL":r.hasChildNodes()&&(t.appendChild(r),r=document.createElement("p")),t.appendChild(n);continue}}r.appendChild(n)}r.hasChildNodes()&&t.appendChild(r),e.appendChild(t)}function r(){try{return document.activeElement||null}catch(e){return null}}function n(e,t,r){var n="object"===("undefined"==typeof e?"undefined":_typeof(e))?e:document.getElementById(e);if(null==n)return null;var a=Array.isArray(t)?t:[t];jQuery(n).empty();for(var i=0,o=a.length;i<o;++i)if(Story.has(a[i]))return new Wikifier(n,Story.get(a[i]).processText().trim()),n;if(null!=r){var s=String(r).trim();""!==s&&new Wikifier(n,s)}return n}function a(e,t,r){return jQuery(document.createElement("span")).addClass("error").attr("title",r).text(L10n.get("errorTitle")+": "+(t||"unknown error")).appendTo(e),!1}function i(e,t){switch("undefined"==typeof e?"undefined":_typeof(e)){case"number":if(Number.isNaN(e))return t;break;case"object":if(null===e)return t;if(Array.isArray(e)||e instanceof Set)return[].concat(_toConsumableArray(e)).map(function(e){return i(e,t)}).join(", ");if(e instanceof Map){var r=function(){var r=i,n=[].concat(_toConsumableArray(e)).map(function(e){return r(e[0],t)+" ⇒ "+r(e[1],t)}).join("; ");return{v:"( "+n+" )"}}();if("object"===("undefined"==typeof r?"undefined":_typeof(r)))return r.v}else{if(e instanceof Date)return e.toLocaleString();if("function"==typeof e.toString)return e.toString()}return Object.prototype.toString.call(e);case"function":case"undefined":return t}return String(e)}return Object.freeze(Object.defineProperties({},{clone:{value:e},convertBreaks:{value:t},safeActiveElement:{value:r},setPageElement:{value:n},throwError:{value:a},toStringOrDefault:{value:i}}))}(),clone=_ref4.clone,convertBreaks=_ref4.convertBreaks,safeActiveElement=_ref4.safeActiveElement,setPageElement=_ref4.setPageElement,throwError=_ref4.throwError,toStringOrDefault=_ref4.toStringOrDefault;!function(){function e(e){13!==e.which&&32!==e.which||(e.preventDefault(),jQuery(safeActiveElement()||this).trigger("click"))}function t(e){return function(){var t=jQuery(this);t.is("[aria-pressed]")&&t.attr("aria-pressed","true"===t.attr("aria-pressed")?"false":"true"),e.apply(this,arguments)}}function r(e){return t(function(){jQuery(this).off(".aria-clickable").removeAttr("tabindex aria-controls aria-pressed").not("a,button").removeAttr("role").end().filter("button").prop("disabled",!0),e.apply(this,arguments)})}jQuery.fn.extend({ariaClick:function(n,a){if(0===this.length||0===arguments.length)return this;var i=n,o=a;return null==o&&(o=i,i=undefined),i=jQuery.extend({namespace:undefined,one:!1,selector:undefined,data:undefined,controls:undefined,pressed:undefined,label:undefined},i),"string"!=typeof i.namespace?i.namespace="":"."!==i.namespace[0]&&(i.namespace="."+i.namespace),"boolean"==typeof i.pressed&&(i.pressed=i.pressed?"true":"false"),this.filter("button").prop("type","button"),this.not("a,button").attr("role","button"),this.attr("tabindex",0),null!=i.controls&&this.attr("aria-controls",i.controls),null!=i.pressed&&this.attr("aria-pressed",i.pressed),null!=i.label&&this.attr({"aria-label":i.label,title:i.label}),this.not("button").on("keypress.aria-clickable"+i.namespace,i.selector,e),this.on("click.aria-clickable"+i.namespace,i.selector,i.data,i.one?r(o):t(o)),this}})}(),function(){jQuery.extend({wikiWithOptions:function(e){for(var t=arguments.length,r=Array(t>1?t-1:0),n=1;n<t;n++)r[n-1]=arguments[n];if(0!==r.length){var a=document.createDocumentFragment();r.forEach(function(t){return new Wikifier(a,t,e)});var i=[].concat(_toConsumableArray(a.querySelectorAll(".error"))).map(function(e){return e.textContent.replace(/^(?:(?:Uncaught\s+)?Error:\s+)+/,"")});if(i.length>0)throw new Error(i.join("; "))}},wiki:function(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];this.wikiWithOptions.apply(this,[undefined].concat(t))}}),jQuery.fn.extend({wikiWithOptions:function(e){for(var t=arguments.length,r=Array(t>1?t-1:0),n=1;n<t;n++)r[n-1]=arguments[n];if(0===this.length||0===r.length)return this;var a=document.createDocumentFragment();return r.forEach(function(t){return new Wikifier(a,t,e)}),this.append(a),this},wiki:function(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return this.wikiWithOptions.apply(this,[undefined].concat(t))}})}();var Util=function(){function e(e){return Object.freeze(Object.assign(Object.create(null),e))}function t(e){var t=void 0;switch("undefined"==typeof e?"undefined":_typeof(e)){case"number":t=e;break;case"string":t=Number(e);break;default:return!1}return!Number.isNaN(t)&&Number.isFinite(t)}function r(e){return"boolean"==typeof e||"string"==typeof e&&("true"===e||"false"===e)}function n(e){return String(e).trim().replace(/[^\w\s\u2013\u2014-]+/g,"").replace(/[_\s\u2013\u2014-]+/g,"-").toLocaleLowerCase()}function a(e){if(null==e)return"";var t=String(e);return t&&p.test(t)?t.replace(f,function(e){return h[e]}):t}function i(e){if(null==e)return"";var t=String(e);return t&&m.test(t)?t.replace(g,function(e){return v[e]}):t}function o(e){var t=/^([+-]?(?:\d*\.)?\d+)([Mm]?[Ss])$/,r=t.exec(String(e));if(null===r)throw new SyntaxError('invalid time value syntax: "'+e+'"');var n=Number(r[1]);if(/^[Ss]$/.test(r[2])&&(n*=1e3),Number.isNaN(n)||!Number.isFinite(n))throw new RangeError('invalid time value: "'+e+'"');return n}function s(e){if("number"!=typeof e||Number.isNaN(e)||!Number.isFinite(e)){var t=void 0;switch("undefined"==typeof e?"undefined":_typeof(e)){case"string":t='"'+e+'"';break;case"number":t=String(e);break;default:t=Object.prototype.toString.call(e)}throw new Error("invalid milliseconds: "+t)}return e+"ms"}function u(e){if(!e.includes("-"))switch(e){case"bgcolor":return"backgroundColor";case"float":return"cssFloat";default:return e}var t="-ms-"===e.slice(0,4)?e.slice(1):e;return t.split("-").map(function(e,t){return 0===t?e:e.toUpperFirst()}).join("")}function l(e){var t=document.createElement("a"),r=Object.create(null);t.href=e,t.search&&t.search.replace(/^\?/,"").splitOrEmpty(/(?:&(?:amp;)?|;)/).forEach(function(e){var t=e.split("="),n=_slicedToArray(t,2),a=n[0],i=n[1];r[a]=i});var n=t.host&&"/"!==t.pathname[0]?"/"+t.pathname:t.pathname;return{href:t.href,protocol:t.protocol,host:t.host,hostname:t.hostname,port:t.port,path:""+n+t.search,pathname:n,query:t.search,search:t.search,queries:r,searches:r,hash:t.hash}}function c(e,t){for(var r=Object.prototype.toString,n=Array.isArray(e),a=[].concat(Object.keys(e),Object.keys(t)).sort().filter(function(e,t,r){return 0===t||r[t-1]!==e}),i={},o=void 0,s=function(e){return e===o},u=0,l=a.length;u<l;++u){var c=a[u],d=e[c],f=t[c];if(e.hasOwnProperty(c))if(t.hasOwnProperty(c)){if(d===f)continue;if(("undefined"==typeof d?"undefined":_typeof(d))===("undefined"==typeof f?"undefined":_typeof(f)))if("function"==typeof d)d.toString()!==f.toString()&&(i[c]=[y.Copy,f]);else if("object"!==("undefined"==typeof d?"undefined":_typeof(d))||null===d)i[c]=[y.Copy,f];else{var p=r.call(d),h=r.call(f);if(p===h)if("[object Date]"===p){var g=Number(f);Number(d)!==g&&(i[c]=[y.CopyDate,g])}else if("[object RegExp]"===p)d.toString()!==f.toString()&&(i[c]=[y.Copy,clone(f)]);else{var m=Util.diff(d,f);null!==m&&(i[c]=m)}else i[c]=[y.Copy,clone(f)]}else i[c]=[y.Copy,"object"!==("undefined"==typeof f?"undefined":_typeof(f))||null===f?f:clone(f)]}else if(n&&Util.isNumeric(c)){var v=Number(c);if(!o){o="";do o+="~";while(a.some(s));i[o]=[y.SpliceArray,v,v]}v<i[o][1]&&(i[o][1]=v),v>i[o][2]&&(i[o][2]=v)}else i[c]=y.Delete;else i[c]=[y.Copy,"object"!==("undefined"==typeof f?"undefined":_typeof(f))||null===f?f:clone(f)]}return Object.keys(i).length>0?i:null}function d(e,t){for(var r=Object.keys(t||{}),n=clone(e),a=0,i=r.length;a<i;++a){var o=r[a],s=t[o];if(s===y.Delete)delete n[o];else if(Array.isArray(s))switch(s[0]){case y.SpliceArray:n.splice(s[1],1+(s[2]-s[1]));break;case y.Copy:n[o]=clone(s[1]);break;case y.CopyDate:n[o]=new Date(s[1])}else n[o]=Util.patch(n[o],s)}return n}var f=/[&<>"'`]/g,p=new RegExp(f.source),h=Object.freeze({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;","`":"&#96;"}),g=/&(?:amp|lt|gt|quot|apos|#39|#x27|#96|#x60);/g,m=new RegExp(g.source),v=Object.freeze({"&amp;":"&","&lt;":"<","&gt;":">","&quot;":'"',"&apos;":"'","&#39;":"'","&#x27;":"'","&#96;":"`","&#x60;":"`"}),y=e({Delete:0,SpliceArray:1,Copy:2,CopyDate:3});return Object.freeze(Object.defineProperties({},{toEnum:{value:e},isNumeric:{value:t},isBoolean:{value:r},slugify:{value:n},escape:{value:a},unescape:{value:i},fromCssTime:{value:o},toCssTime:{value:s},fromCssProperty:{value:u},parseUrl:{value:l},DiffOp:{value:y},diff:{value:c},patch:{value:d},random:{value:Math.random},entityEncode:{value:a},entityDecode:{value:i},evalExpression:{value:function(){return Scripting.evalJavaScript.apply(Scripting,arguments)}},evalStatements:{value:function(){return Scripting.evalJavaScript.apply(Scripting,arguments)}}}))}(),SimpleAudio=function(){function e(){return g}function t(e){g=!!e,l("mute",g)}function r(){return p}function n(e){p=Math.clamp(e,.2,5),l("rate",p)}function a(){return h}function i(e){h=Math.clamp(e,0,1),l("volume",h)}function o(){l("stop")}function s(e,t){if("function"!=typeof t)throw new Error("callback parameter must be a function");f.set(e,t)}function u(e){f.delete(e)}function l(e,t){f.forEach(function(r){return r(e,t)})}function c(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return new(Function.prototype.bind.apply(m,[null].concat(t)))}function d(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return new(Function.prototype.bind.apply(v,[null].concat(t)))}var f=new Map,p=1,h=1,g=!1,m=function(){function e(t){if(_classCallCheck(this,e),Array.isArray(t))this._create(t);else{if(!(t instanceof e))throw new Error("sources parameter must be an array of either URLs or source objects");this._copy(t)}}return _createClass(e,[{key:"_create",value:function(t){if(!Array.isArray(t)||0===t.length)throw new Error("sources parameter must be an array of either URLs or source objects");var r=/^data:\s*audio\/([^;,]+)\s*[;,]/i,n=/\.([^.\/\\]+)$/,a=e.getType,i=[],o=document.createElement("audio");if(t.forEach(function(e){var t=null;switch("undefined"==typeof e?"undefined":_typeof(e)){case"string":var s=void 0;if("data:"===e.slice(0,5)){if(s=r.exec(e),null===s)throw new Error("source data URI missing media type")}else if(s=n.exec(Util.parseUrl(e).pathname),null===s)throw new Error("source URL missing file extension");var u=a(s[1]);null!==u&&(t={src:e,type:u});break;case"object":if(null===e)throw new Error("source object cannot be null");if(!e.hasOwnProperty("src"))throw new Error('source object missing required "src" property');if(!e.hasOwnProperty("format"))throw new Error('source object missing required "format" property');var l=a(e.format);null!==l&&(t={src:e.src,type:l});break;default:throw new Error("invalid source value (type: "+("undefined"==typeof e?"undefined":_typeof(e))+")")}if(null!==t){var c=document.createElement("source");c.src=t.src,c.type=t.type,o.appendChild(c),i.push(t)}}),!o.hasChildNodes())if(Browser.isIE)o.src=undefined;else{var s=document.createElement("source");s.src=undefined,s.type=undefined,o.appendChild(s)}this._finalize(o,i,clone(t))}},{key:"_copy",value:function(t){if(!(t instanceof e))throw new Error("original parameter must be an instance of AudioWrapper");this._finalize(t.audio.cloneNode(!0),clone(t.sources),clone(t.originalSources))}},{key:"_finalize",value:function(e,t,r){var n=this;Object.defineProperties(this,{audio:{configurable:!0,value:e},sources:{configurable:!0,value:Object.freeze(t)},originalSources:{configurable:!0,value:Object.freeze(r)},_error:{writable:!0,value:!1},_faderId:{writable:!0,value:null},_mute:{writable:!0,value:!1},_rate:{writable:!0,value:1},_volume:{writable:!0,value:1}}),jQuery(this.audio).on("loadstart",function(){return n._error=!1}).on("error",function(){return n._error=!0}).find("source:last-of-type").on("error",function(){return n._trigger("error")}),SimpleAudio.subscribe(this,function(e){if(!n.audio)return void SimpleAudio.unsubscribe(n);switch(e){case"mute":n._updateAudioMute();break;case"rate":n._updateAudioRate();break;case"stop":n.stop();break;case"volume":n._updateAudioVolume()}}),this.load()}},{key:"_trigger",value:function(e){jQuery(this.audio).triggerHandler(e)}},{key:"clone",value:function(){return new e(this)}},{key:"destroy",value:function(){SimpleAudio.unsubscribe(this),this.fadeStop(),this.stop();
