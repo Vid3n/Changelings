@@ -1,0 +1,73 @@
+/* ROLE END RESULT BASE */
+@@.typed;
+analysing . . .
+. . .
+. . .
+analysis complete. . .
+@@<<timed 4s t8n>>
+Which role sparks your interest?
+<<if $self and $mind or $body and $creation and $outspoken and $ritualistic and $physical>>\
+[[Summoner]]/* Summoner-archetype */
+<</if>>\
+<<if $self or $others and $body and $creation or $destruction and $outspoken and $pragmatic and $physical>>\
+[[CloudCollector]]/* Beasttamer-archetype */
+<</if>>\
+<<if $self and $body and $destruction and $silent or $outspoken and $pragmatic and $physical>>\
+[[Mercenary]]/* Warrior-archetype */
+<</if>>\
+<<if $self and $mind and $creation and $silent or $outspoken and $ritualistic and $mental>>\
+[[Mindrunner|Mindrunner]]/* wizard-archetype */
+<</if>>\
+<<if $self and $body and $destruction and $outspoken and $pragmatic and $physical>>\
+[[Barbarian|Role2]]
+<</if>>\
+<<if $self and $body or $body and $destruction or $creation and $silent and $pragmatic and $physical or $mental>>\
+[[Hunter|Role2]]
+<</if>>\
+<<if $self and $body and $creation and $silent and $pragmatic and $physical>>\
+[[Trapper|Role2]]
+<</if>>\
+<<if $self and $mind and $creation or $destruction and $silent and $pragmatic or $ritualistic and $mental>>\
+[[Alchemist|Role2]]
+<</if>>\
+<<if $self and $mind and $destruction or $creation and $outspoken and $ritualistic and $mental>>\
+[[Warlock|Role2]]
+<</if>>\
+<<if $self and $body or $mind and $creation or $destruction and $silent and $pragmatic and $physical>>\
+[[Ninja|Role2]]
+<</if>>\
+<<if $self and $body and $destruction or $creation and $silent and $pragmatic and $physical>>\
+[[Wraith]]/* Rogue-archetype */
+<</if>>\
+<<if $self and $mind and $creation and $silent and $pragmatic and $physical>>\
+[[Tinkerer|Role2]]
+<</if>>\
+<<if $self and $body or $mind and $creation and $silent and $pragmatic and $mental>>\
+[[Monk|Role2]]
+<</if>>\
+<<if $others and $body and $creation or $destruction and $silent or $outspoken and $ritualistic and $physical>>\
+[[Paladin|Role2]]
+<</if>>\
+<<if $others and $body and $creation or $destruction and $silent and $pragmatic and $physical>>\
+[[Knight|Role2]]
+<</if>>\
+<<if $others and $body and $creation and $silent and $ritualistic and $physical>>\
+[[Defender|Role2]]
+<</if>>\
+<<if $others and $mind or $body and $creation and $silent or $outspoken and $ritualistic and $mental>>\
+[[Druid|Role2]]
+<</if>>\
+<<if $others or $self and $mind and $creation and $outspoken or $silent and $ritualistic or $pragmatic and $mental>>\
+[[Sage|Role2]]
+<</if>>\
+<<if $others and $mind and $creation and $silent or $outspoken and $ritualistic and $mental>>\
+[[Mystic|Role2]]
+<</if>>\
+<<if $others and $body and $creation or $destruction and $outspoken and $ritualistic and $physical>>\
+[[Shaman|Role2]]
+<</if>>\
+<<if $others or $self and $body or $mind and $creation and $outspoken and $pragmatic and $physical or $mental>>\
+[[Bard|Role2]]
+<</if>>\
+
+[[DeadEnd|IntroDescription]]<</timed>>
